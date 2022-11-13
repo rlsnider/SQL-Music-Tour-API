@@ -11,13 +11,6 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate({ Stage, Event }) {
 
-     StageEvent.BelongsTo(Stage, { 
-        foriegnKey: "stage_id",
-
-     })
-     StageEvent.BelongsTo(Event, { 
-      foriegnKey: "event_id"
-     })
     }
   }
   StageEvent.init({
