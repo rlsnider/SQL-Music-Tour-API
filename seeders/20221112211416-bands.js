@@ -4,8 +4,17 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Band', [{
-      
-    }])
+      name: 'The Band',
+      genre: 'Rock and Roll',
+      available_start_time: "2022-11-15T18:30:00",
+      end_time: "2022-11-15T23:00:00"
+    },
+  {
+    name: 'Black Sabbath',
+    genre: 'Hard Rock',
+    available_start_time:"2022-11-15T18:30:00",
+    end_time: "2022-11-15T23:00:00"
+  }], {})
     /**
      * Add seed commands here.
      *
@@ -18,6 +27,7 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
+    
     /**
      * Add commands to revert seed here.
      *
