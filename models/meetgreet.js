@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
   meet_end_time: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.DATE,
     allowNull: false
   },
   }, {

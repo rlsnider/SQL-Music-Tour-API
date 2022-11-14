@@ -23,7 +23,7 @@ module.exports = {
         allowNull: false
       },
       meet_end_time: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.DATE,
         allowNull: false
       },
     });

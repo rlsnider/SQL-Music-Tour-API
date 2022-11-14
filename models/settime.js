@@ -38,10 +38,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    band_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
     start_time: {
       type: DataTypes.DATE,
       allowNull: false
